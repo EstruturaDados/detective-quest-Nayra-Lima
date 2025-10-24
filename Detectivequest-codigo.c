@@ -4,7 +4,6 @@
 
 /*
     Programa: Detective Quest - Mapa da Mansão
-    Autor: [Seu Nome]
     Descrição:
         Este programa representa o mapa da mansão como uma ÁRVORE BINÁRIA.
         Cada nó é um cômodo (Sala) que possui dois possíveis caminhos:
