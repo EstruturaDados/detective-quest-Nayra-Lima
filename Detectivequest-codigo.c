@@ -62,7 +62,7 @@ void explorarSalas(Sala *atual) {
 
     // Caso o cômodo não tenha caminhos, termina a exploração
     if (atual->esquerda == NULL && atual->direita == NULL) {
-        printf("🔍 Este é um cômodo sem saídas. Você chegou ao fim da exploração!\n");
+        printf(" Este é um cômodo sem saídas. Você chegou ao fim da exploração!\n");
         return;
     }
 
@@ -82,7 +82,7 @@ void explorarSalas(Sala *atual) {
                 explorarSalas(atual->esquerda);
                 return;
             } else {
-                printf("🚪 Não há caminho à esquerda!\n");
+                printf(" Não há caminho à esquerda!\n");
             }
         } 
         else if (escolha == 'd' || escolha == 'D') {
@@ -90,11 +90,11 @@ void explorarSalas(Sala *atual) {
                 explorarSalas(atual->direita);
                 return;
             } else {
-                printf("🚪 Não há caminho à direita!\n");
+                printf(" Não há caminho à direita!\n");
             }
         } 
         else if (escolha == 's' || escolha == 'S') {
-            printf("\nVocê decidiu sair da mansão. 🕵️‍♂️\n");
+            printf("\nVocê decidiu sair da mansão. \n");
             return;
         } 
         else {
@@ -155,7 +155,7 @@ int main() {
     // Libera memória ao final
     liberarSalas(hall);
 
-    printf("\nExploração encerrada. Até a próxima, detetive! 🕵️‍♀️\n");
+    printf("\nExploração encerrada. Até a próxima, detetive! \n");
 
     return 0;
 }
